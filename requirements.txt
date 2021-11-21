@@ -1,5 +1,10 @@
+click
+itdangerous
+Jinja2
+MarkupSafe
 gunicorn
 pandas
 scikit-learn
 numpy
 Flask
+Werkzeug
