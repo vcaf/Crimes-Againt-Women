@@ -65,12 +65,12 @@ def gettingValuesStates(state_name):
     state_label = 0
 
 #     print(type(state_name))
-if (state_name == 'A & N ISLANDS'):
+    if (state_name == 'A & N ISLANDS'):
     
-    longitude = 92.735983
-    latitude = 11.667026
-    state_label = 0
-    cardinal_region = 1
+        longitude = 92.735983
+        latitude = 11.667026
+        state_label = 0
+        cardinal_region = 1
 #     match state_name:
 #         case 'A & N ISLANDS':
 #             longitude = 92.735983
