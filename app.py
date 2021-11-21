@@ -39,15 +39,15 @@ def ValuePredictor(to_predict_list):
     severity = 'Unknown'
 
     # Lowest to the highest ranking from the model [4, 1, 0, 3, 2]
-    if (result == 2'):
+    if (result == 2):
         severity = "Highest"
-    if (result == 3'):
+    if (result == 3):
         severity = "second highest"
-    if (result == 0'):
+    if (result == 0):
         severity = "medium"
-    if (result == 1'):
+    if (result == 1):
         severity = "second lowest"
-    if (result == 4'):
+    if (result == 4):
         severity = "Lowest"
     return severity
 
