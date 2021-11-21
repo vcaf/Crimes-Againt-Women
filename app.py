@@ -32,7 +32,7 @@ def submit():
 #  return render_template('submit.html',prediction=year)
 
     # Python -> to html file
-    return render_template('submit.html', name_pyton = result)
+    return render_template('submit.html', name_pyton = year)
 
 # def ValuePredictor(to_predict_list):
 #     to_predict = np.array(to_predict_list).reshape(1,5)
