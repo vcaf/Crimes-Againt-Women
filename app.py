@@ -21,10 +21,10 @@ def submit():
         region_name_drop_down = request.form['region_name_drop_down']
         year = request.form['year']
         print(gettingValuesStates(region_name_drop_down))
-        [longitude, latitude, cardinal_region,state_label] = gettingValuesStates(region_name_drop_down)
-        list = [[year, latitude, longitude,state_label,  cardinal_region]]
-        print(list)
-        arr = np.array(list)
+#         [longitude, latitude, cardinal_region,state_label] = gettingValuesStates(region_name_drop_down)
+#         list = [[year, latitude, longitude,state_label,  cardinal_region]]
+#         print(list)
+#         arr = np.array(list)
 
 #         result = ValuePredictor(arr)
 #         # prediction = str(result)
