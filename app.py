@@ -25,7 +25,7 @@ def submit():
         arr = np.array(list)
         result = ValuePredictor(arr)
     # Python -> to html file
-    return render_template('submit.html', name_pyton = [result, region_name_drop_down])
+    return render_template('submit.html', name_pyton = [result, region_name_drop_down,year])
 
 #     return result[0]
 def ValuePredictor(to_predict_list):
