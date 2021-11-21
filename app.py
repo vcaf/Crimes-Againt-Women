@@ -20,7 +20,7 @@ def submit():
 
         region_name_drop_down = request.form['region_name_drop_down']
         year = request.form['year']
-        print(gettingValuesStates(region_name_drop_down))
+#         print(gettingValuesStates(region_name_drop_down))
 #         [longitude, latitude, cardinal_region,state_label] = gettingValuesStates(region_name_drop_down)
 #         list = [[year, latitude, longitude,state_label,  cardinal_region]]
 #         print(list)
@@ -31,7 +31,7 @@ def submit():
 #  return render_template('submit.html',prediction=arr)
 
     # Python -> to html file
-    return render_template('submit.html', name_pyton = year)
+    return render_template('submit.html', name_pyton = region_name_drop_down)
 
 # def ValuePredictor(to_predict_list):
 #     to_predict = np.array(to_predict_list).reshape(1,5)
