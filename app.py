@@ -65,14 +65,20 @@ def gettingValuesStates(state_name):
     state_label = 0
 
 #     print(type(state_name))
-    match state_name:
-        case 'A & N ISLANDS':
-            longitude = 92.735983
-            latitude = 11.667026
-            state_label = 0
-            cardinal_region = 1
+if (state_name == 'A & N ISLANDS'):
+    
+    longitude = 92.735983
+    latitude = 11.667026
+    state_label = 0
+    cardinal_region = 1
+#     match state_name:
+#         case 'A & N ISLANDS':
+#             longitude = 92.735983
+#             latitude = 11.667026
+#             state_label = 0
+#             cardinal_region = 1
 
-            return longitude, latitude, cardinal_region,state_label
+#             return longitude, latitude, cardinal_region,state_label
 #         case 'ANDHRA PRADESH':
 #             longitude = 78.570026
 #             latitude = 14.750429
