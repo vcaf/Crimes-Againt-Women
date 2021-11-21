@@ -23,15 +23,10 @@ def submit():
         [longitude, latitude, cardinal_region,state_label] = gettingValuesStates(region_name_drop_down)
         list = [[year, latitude, longitude,state_label,  cardinal_region]]
         arr = np.array(list)
-
         result = ValuePredictor(arr)
-#         # prediction = str(result)
-#  return render_template('submit.html',prediction=arr)
-
     # Python -> to html file
     return render_template('submit.html', name_pyton = result)
 
-#     return result[0]
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,5)
     loaded_model = pickle.load(open('random_forest.pkl','rb'))
@@ -219,7 +214,6 @@ def gettingValuesStates(state_name):
             state_label = 31
             cardinal_region = 0
     if (state_name == 'UTTARAKHAND'):
-#         case 'UTTARAKHAND':
             longitude = 78.050006
             latitude = 30.320409
             state_label = 32
