@@ -38,11 +38,11 @@ def ValuePredictor(to_predict_list):
     if (result == 2):
         severity = "Highest"
     if (result == 3):
-        severity = "second highest"
+        severity = "Second highest"
     if (result == 0):
-        severity = "medium"
+        severity = "Medium"
     if (result == 1):
-        severity = "second lowest"
+        severity = "Second lowest"
     if (result == 4):
         severity = "Lowest"
     return severity
