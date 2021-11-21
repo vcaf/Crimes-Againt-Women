@@ -21,42 +21,35 @@ def submit():
         region_name_drop_down = request.form['region_name_drop_down']
         year = request.form['year']
         [longitude, latitude, cardinal_region,state_label] = gettingValuesStates(region_name_drop_down)
-#         list = [[year, latitude, longitude,state_label,  cardinal_region]]
-#         print(list)
-#         arr = np.array(list)
+        list = [[year, latitude, longitude,state_label,  cardinal_region]]
+        arr = np.array(list)
 
-#         result = ValuePredictor(arr)
+        result = ValuePredictor(arr)
 #         # prediction = str(result)
 #  return render_template('submit.html',prediction=arr)
 
     # Python -> to html file
-    return render_template('submit.html', name_pyton = cardinal_region)
+    return render_template('submit.html', name_pyton = result)
 
 #     return result[0]
-# def ValuePredictor(to_predict_list):
-#     to_predict = np.array(to_predict_list).reshape(1,5)
-#     loaded_model = pickle.load(open('random_forest.pkl','rb'))
-#     result = loaded_model.predict(to_predict)
-#     severity = 'Unknown'
+def ValuePredictor(to_predict_list):
+    to_predict = np.array(to_predict_list).reshape(1,5)
+    loaded_model = pickle.load(open('random_forest.pkl','rb'))
+    result = loaded_model.predict(to_predict)
+    severity = 'Unknown'
 
-#     # Lowest to the highest ranking from the model [4, 1, 0, 3, 2]
-#     match result:
-#         case 2:
-#             severity = "Highest"
-#             return  severity
-#         case 3:
-#             severity = "second highest"
-#             return  severity
-#         case 0:
-#             severity = 'medium'
-#             return  severity
-#         case 1:
-#             severity = 'second lowest'
-#             return  severity
-#         case 4:
-#             severity = 'Lowest'
-#             return  severity
-#     return result[0]
+    # Lowest to the highest ranking from the model [4, 1, 0, 3, 2]
+    if (result == 2'):
+        severity = "Highest"
+    if (result == 3'):
+        severity = "second highest"
+    if (result == 0'):
+        severity = "medium"
+    if (result == 1'):
+        severity = "second lowest"
+    if (result == 4'):
+        severity = "Lowest"
+    return severity
 
 def gettingValuesStates(state_name):
     longitude = 0
