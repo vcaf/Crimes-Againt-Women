@@ -25,8 +25,9 @@ def submit():
         arr = np.array(list)
         result = ValuePredictor(arr)
     # Python -> to html file
-    return render_template('submit.html', name_pyton = result)
+    return render_template('submit.html', name_pyton = [result, region_name_drop_down])
 
+#     return result[0]
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,5)
     loaded_model = pickle.load(open('random_forest.pkl','rb'))
