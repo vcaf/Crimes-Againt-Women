@@ -7,20 +7,30 @@
     <title>Model Deployment</title>
 
     <script>
-        function validateForm() {
-          var x = document.forms["myForm"]["year"].value;
-          if (x == "" || x == null) {
-            alert("Year must be filled out");
-            return false;
-          }
+      function validateForm() {
+        var x = document.forms["myForm"]["year"].value;
+        if (x == "" || x == null) {
+          alert("Year must be filled out");
+          return false;
         }
+      }
     </script>
   </head>
   <body>
     <h1>Model Deployment</h1>
-    <p>Enter region name and year to predict the severity of the state/union territory</p>
+    <p>
+      Enter region name and year to predict the severity of the state/union
+      territory
+    </p>
 
-    <form name="myForm" action="/sub" onsubmit="return validateForm()" method="POST" required>
+    <!-- <form action="/sub" method="POST"> -->
+    <form
+      name="myForm"
+      action="/sub"
+      onsubmit="return validateForm()"
+      method="POST"
+      required
+    >
       <input type="number" name="year" placeholder="year" />
       <br />
       <select name="region_name_drop_down">
@@ -59,7 +69,8 @@
         <option value="UTTARAKHAND">UTTARAKHAND</option>
         <option value="WEST BENGAL">WEST BENGAL</option>
       </select>
-      <input type="submit" value="Submit">
+      <!-- <input type="submit" /> -->
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
