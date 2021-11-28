@@ -1,4 +1,4 @@
-![Alt Text](crimes against women project gif.gif)
+![Alt Text](My_Model_Deployment_Crimes_Againt_Women/crimes against women project gif.gif)
 <h1>Crimes Against Women severity prediction per state in India</h1>
 <img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/02/12/Photos/women--621x414.JPG">
 
