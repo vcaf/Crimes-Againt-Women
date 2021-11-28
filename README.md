@@ -1,6 +1,6 @@
-![Alt Text](My_Model_Deployment_Crimes_Againt_Women/crimes against women project gif.gif)
+<img src="https://github.com/vcaf/My_Model_Deployment_Crimes_Againt_Women/blob/main/crimes%20against%20women%20project%20gif.gif" width="600" height="400">
 <h1>Crimes Against Women severity prediction per state in India</h1>
-<img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/02/12/Photos/women--621x414.JPG">
+<img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/02/12/Photos/women--621x414.JPG" width="400" height="250">
 
 <h2>Context Understanding</h2>
 <h3>Problem Formulation</h3>
@@ -182,6 +182,8 @@ the mean accuracy of the models is somewhat similar.</p>
 </ol>
   
 <h2>Usage of site</h2>
+<img src="https://github.com/vcaf/My_Model_Deployment_Crimes_Againt_Women/blob/main/crimes%20against%20women%20project%20gif.gif" width="600" height="400">
+
 The site can be found at <a href='https://deployment-crimes-women.herokuapp.com/'>Predicting the region severity for crimes against women</a></p>
 
 To use the site do you need to specify a region you would like to know the severity of and which year
